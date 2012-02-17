@@ -1,5 +1,8 @@
 // http://t.co/RmTu5FJa
 // http://10.0.0.9:8000/RmTu5FJa
+// http://t.co/loifeXrG
+
+// http://94.19.192.54:8000/loifeXrG
 
 var http = require('http'),
     url = require('url');
@@ -22,7 +25,7 @@ http.createServer(function (req, res) {
         return;
     }
     
-    console.log("looking up " + path);
+    //console.log("looking up " + path);
     
     http.get({host: "t.co", port: "80", path: path},
         function(hres){
@@ -43,6 +46,4 @@ http.createServer(function (req, res) {
             }
         }
     ).on('error', function(e){error("http request to t.co failed");});
-}).listen(8000);
-
-console.log("started");
+}).listen(80);
