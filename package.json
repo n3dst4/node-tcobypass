@@ -1,0 +1,8 @@
+{
+  "name": "node-tcobypass",
+  "subdomain": "tcobypass",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.0"
+}
